@@ -1,0 +1,13 @@
+{
+  "name": "language-formality",
+  "main": "./lib/language-formality",
+  "version": "0.1.0",
+  "description": "Formality language support on Atom",
+  "keywords": [],
+  "repository": "https://github.com/moonad/language-formality.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}
