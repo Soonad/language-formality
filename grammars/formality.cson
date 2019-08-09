@@ -1,7 +1,7 @@
 'fileTypes' : [
   'fm'
 ]
-'name' : 'fm'
+'name' : 'Formality-Core'
 'patterns' : [
   {
     'include' : '#main'
@@ -22,6 +22,10 @@
         'include' : '#numeric'
       }
       {
+        'match' : '(\\bT\\s.*:)'
+        'name' : 'meta.function.fm'
+      }
+      {
         'match' : '(\\blet\\s|\\bdup\\s|\\bcpy\\s|\\bget\\s|\\bsnd\\s|\\bfst\\s)'
         'name' : 'storage.type.fm'
       }
@@ -33,16 +37,11 @@
         'begin' : '(\\")'
         'beginCaptures' : {
           '1' : {
-            'name' : 'string.fm'
+            'name' : 'string.quoted.double.fm'
           }
         }
-        'contentName' : 'string.fm'
+        'contentName' : 'string.quoted.double.fm'
         'end' : '(\\")'
-        'endCaptures' : {
-          '1' : {
-            'name' : 'string.fm'
-          }
-        }
       }
       {
         'match' : '(//.*)'
@@ -57,10 +56,6 @@
         'name' : 'keyword.fm'
       }
       {
-        'match' : '(import|open)'
-        'name' : 'keyword.control.import.fm'
-      }
-      {
         'match' : '(<=|>=|===|<|>|!==|&)'
         'name' : 'keyword.operator.logical.fm'
       }
@@ -69,7 +64,7 @@
         'name' : 'keyword.operator.arithmetic.fm'
       }
       {
-        'match' : '(\\bif\\s|\\bthen[\\s\\x{007c}\\:]|\\belse[\\s\\x{007c}\\:]|case)'
+        'match' : '(\\bif\\s|\\bthen[\\s\\x{007c}\\:]|\\belse[\\s\\x{007c}\\:])'
         'name' : 'keyword.conditional.fm'
       }
     ]
@@ -105,12 +100,12 @@
   'punctuations' : {
     'patterns' : [
       {
-        'match' : '(#|~|!)'
+        'match' : '(#|~)'
         'name' : 'punctuation.definition.variable.fm'
       }
       {
-        'match' : '(:|=[^\\x{003e}]|=>|\\s->\\s)'
-        'name' : 'punctuation.fm'
+        'match' : '(:|\s=\s|!|=>|->)'
+        'name' : 'punctuation.definition.variable.fm'
       }
       {
         'match' : '(\\[|\\]|\\{|\\}|\\(|\\)|\\|)'

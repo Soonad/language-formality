@@ -1,13 +1,43 @@
 {
-  "name": "language-formality",
-  "main": "./lib/language-formality",
-  "version": "0.1.1",
+  "_from": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
+  "_id": "language-formality@0.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-wjsU7BXtPtrkQX8tvqP7ZD0tGA0QdiZv/EZlehUbYivKtl65xOqI5jQEPQPmWNl2XlldJ8c+FVgvY7nOeqYaWw==",
+  "_location": "/language-formality",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
+  "_shasum": "46b5f945233262b46aa5c819af9786ad22c6adb9",
+  "_spec": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
+  "_where": "/private/var/folders/_f/hcl9f8lx0j9gy0gg2nkgt5900000gn/T/apm-install-dir-11976-23349-1o5ae7k.x2cy",
+  "bugs": {
+    "url": "https://github.com/moonad/language-formality/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
   "description": "Formality language support on Atom",
-  "keywords": [],
-  "repository": "https://github.com/moonad/language-formality.git",
-  "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "homepage": "https://github.com/moonad/language-formality#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/language-formality",
+  "name": "language-formality",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonad/language-formality.git"
+  },
+  "version": "0.1.1"
 }
