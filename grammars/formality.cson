@@ -1,7 +1,7 @@
 'fileTypes' : [
   'fm'
 ]
-'name' : 'Formality-Core'
+'name' : 'fm'
 'patterns' : [
   {
     'include' : '#main'
@@ -22,29 +22,26 @@
         'include' : '#numeric'
       }
       {
-        'match' : '(\\bT\\s.*:)'
-        'name' : 'meta.function.fm'
-      }
-      {
         'match' : '(\\blet\\s|\\bdup\\s|\\bcpy\\s|\\bget\\s|\\bsnd\\s|\\bfst\\s)'
         'name' : 'storage.type.fm'
-      }
-      {
-        'match' : '(\\blet\\s|\\bdup\\s|\\bcpy\\s|\\bget\\s|\\bsnd\\s|\\bfst\\s)'
-        'name' : 'variable.language.fm'
       }
       {
         'begin' : '(\\")'
         'beginCaptures' : {
           '1' : {
-            'name' : 'string.quoted.double.fm'
+            'name' : 'string.fm'
           }
         }
-        'contentName' : 'string.quoted.double.fm'
+        'contentName' : 'string.fm'
         'end' : '(\\")'
+        'endCaptures' : {
+          '1' : {
+            'name' : 'string.fm'
+          }
+        }
       }
       {
-        'match' : '(//.*)'
+        'match' : '(//.*$)'
         'name' : 'comment.line.double-slash.fm'
       }
     ]
@@ -53,18 +50,22 @@
     'patterns' : [
       {
         'match' : '(\\bT\\s)'
-        'name' : 'keyword.fm'
+        'name' : 'keyword.other.fm'
       }
       {
-        'match' : '(<=|>=|===|<|>|!==|&)'
+        'match' : '(import|open)'
+        'name' : 'keyword.control.import.fm'
+      }
+      {
+        'match' : '(\\s<=\\s|\\s>=\\s|\\s===\\s|\\s<\\s|\\s>\\s|\\s.!\\s|\\s.&\\s|\\s.\\|\\s|\\s.<<\\s|\\s.>>\\s)'
         'name' : 'keyword.operator.logical.fm'
       }
       {
-        'match' : '(-|\\+|\\*|\\%|(\\w|\\s)/(\\w|\\s))'
+        'match' : '(\\s-\\s| \\+ | \\s*\\s | \\% | /)'
         'name' : 'keyword.operator.arithmetic.fm'
       }
       {
-        'match' : '(\\bif\\s|\\bthen[\\s\\x{007c}\\:]|\\belse[\\s\\x{007c}\\:])'
+        'match' : '(\\bif\\s|\\belse[\\s\\x{007c}\\:]|\\bthen[\\s\\x{007c}\\:]|@\\s)'
         'name' : 'keyword.conditional.fm'
       }
     ]
@@ -100,15 +101,11 @@
   'punctuations' : {
     'patterns' : [
       {
-        'match' : '(#|~)'
+        'match' : '(#|~|!|\\$)'
         'name' : 'punctuation.definition.variable.fm'
       }
       {
-        'match' : '(:|\s=\s|!|=>|->)'
-        'name' : 'punctuation.definition.variable.fm'
-      }
-      {
-        'match' : '(\\[|\\]|\\{|\\}|\\(|\\)|\\|)'
+        'match' : '(=|:|=[\\x{003e}]|=>|->|~[\\x{003e}]|,|<|>| \\[|\\]|\\{|\\}|\\(|\\)|\\|)'
         'name' : 'punctuation.fm'
       }
     ]
