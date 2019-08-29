@@ -1,6 +1,6 @@
 {
   "_from": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
-  "_id": "language-formality@0.1.1",
+  "_id": "language-formality@0.1.5",
   "_inBundle": false,
   "_integrity": "sha512-wjsU7BXtPtrkQX8tvqP7ZD0tGA0QdiZv/EZlehUbYivKtl65xOqI5jQEPQPmWNl2XlldJ8c+FVgvY7nOeqYaWw==",
   "_location": "/language-formality",
@@ -39,5 +39,5 @@
     "type": "git",
     "url": "https://github.com/moonad/language-formality.git"
   },
-  "version": "0.1.4"
+  "version": "0.1.5"
 }

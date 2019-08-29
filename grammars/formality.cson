@@ -22,7 +22,7 @@
         'include' : '#numeric'
       }
       {
-        'match' : '(\\blet\\s|\\bdup\\s|\\bcpy\\s|\\bget\\s|\\bsnd\\s|\\bfst\\s)'
+        'match' : '(\\blet\\s|\\bdup\\s|\\bcpy\\s|\\bget\\s)'
         'name' : 'storage.type.fm'
       }
       {
@@ -57,15 +57,15 @@
         'name' : 'keyword.control.import.fm'
       }
       {
-        'match' : '(\\s<=\\s|\\s>=\\s|\\s===\\s|\\s<\\s|\\s>\\s|\\s.!\\s|\\s.&\\s|\\s.\\|\\s|\\s.<<\\s|\\s.>>\\s)'
+        'match' : '(\\s\\.=\\s|\\s.<\\s|\\s.>\\s|\\s.!\\s| \\.\\| |\\s.&\\s| \\s\\.>>\\s | \\s\\.<<\\s | \\.\\^ | \\.\\ˆ | ==)'
         'name' : 'keyword.operator.logical.fm'
       }
       {
-        'match' : '(\\s-\\s| \\+ | \\s*\\s | \\% | /)'
+        'match' : '(\\s-\\s| \\+ | \\* | \\% | / | \\^ | \\ˆ )'
         'name' : 'keyword.operator.arithmetic.fm'
       }
       {
-        'match' : '(\\bif\\s|\\belse[\\s\\x{007c}\\:]|\\bthen[\\s\\x{007c}\\:]|@\\s)'
+        'match' : '(\\bif\\s|\\belse[\\s\\x{007c}\\:]|\\bthen[\\s\\x{007c}\\:]|@\\s|case)'
         'name' : 'keyword.conditional.fm'
       }
     ]
@@ -101,11 +101,15 @@
   'punctuations' : {
     'patterns' : [
       {
-        'match' : '(#|~|!|\\$)'
+        'match' : '(#|~|!|\\$|\\.|\\?)'
         'name' : 'punctuation.definition.variable.fm'
       }
       {
-        'match' : '(=|:|=[\\x{003e}]|=>|->|~[\\x{003e}]|,|<|>| \\[|\\]|\\{|\\}|\\(|\\)|\\|)'
+        'match' : '(\\s+=\\s+|:|=[\\x{003e}]|=>|->|~[\\x{003e}]|,|<|>|;)'
+        'name' : 'punctuation.fm'
+      }
+      {
+        'match' : '(\\[|\\]|\\{|\\}|\\(|\\)|\\|)'
         'name' : 'punctuation.fm'
       }
     ]
