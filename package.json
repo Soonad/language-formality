@@ -1,6 +1,6 @@
 {
   "_from": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
-  "_id": "language-formality@0.1.5",
+  "_id": "language-formality@0.2.0",
   "_inBundle": false,
   "_integrity": "sha512-wjsU7BXtPtrkQX8tvqP7ZD0tGA0QdiZv/EZlehUbYivKtl65xOqI5jQEPQPmWNl2XlldJ8c+FVgvY7nOeqYaWw==",
   "_location": "/language-formality",
@@ -21,7 +21,7 @@
   "_spec": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
   "_where": "/private/var/folders/_f/hcl9f8lx0j9gy0gg2nkgt5900000gn/T/apm-install-dir-11976-23349-1o5ae7k.x2cy",
   "bugs": {
-    "url": "https://github.com/moonad/language-formality/issues"
+    "url": "https://github.com/sunshine-cybernetics/language-formality/issues"
   },
   "bundleDependencies": false,
   "dependencies": {},
@@ -30,14 +30,14 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "homepage": "https://github.com/moonad/language-formality#readme",
+  "homepage": "https://github.com/sunshine-cybernetics/language-formality#readme",
   "keywords": [],
   "license": "MIT",
   "main": "./lib/language-formality",
   "name": "language-formality",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moonad/language-formality.git"
+    "url": "https://github.com/sunshine-cybernetics/language-formality.git"
   },
-  "version": "0.1.6"
+  "version": "0.2.0"
 }
