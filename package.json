@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
+  "_from": "https://www.atom.io/api/packages/language-formality/versions/0.1.3/tarball",
   "_id": "language-formality@0.2.0",
   "_inBundle": false,
-  "_integrity": "sha512-wjsU7BXtPtrkQX8tvqP7ZD0tGA0QdiZv/EZlehUbYivKtl65xOqI5jQEPQPmWNl2XlldJ8c+FVgvY7nOeqYaWw==",
+  "_integrity": "sha512-KXIa7gIe+x9QwIN5o2wPWEurOxqwgnUguh9GAnJjVa7NV4XzD8sntU1YR7/YvMLHKJbMrshIOeulLxFd4Rt9aQ==",
   "_location": "/language-formality",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball"
+    "raw": "https://www.atom.io/api/packages/language-formality/versions/0.1.3/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-formality/versions/0.1.3/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-formality/versions/0.1.3/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-formality/versions/0.1.3/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
-  "_shasum": "46b5f945233262b46aa5c819af9786ad22c6adb9",
-  "_spec": "https://www.atom.io/api/packages/language-formality/versions/0.1.1/tarball",
-  "_where": "/private/var/folders/_f/hcl9f8lx0j9gy0gg2nkgt5900000gn/T/apm-install-dir-11976-23349-1o5ae7k.x2cy",
+  "_resolved": "https://www.atom.io/api/packages/language-formality/versions/0.1.3/tarball",
+  "_shasum": "78f8d0c6e4b8ddeac9276a334096134f4fae46b3",
+  "_spec": "https://www.atom.io/api/packages/language-formality/versions/0.1.3/tarball",
+  "_where": "/private/var/folders/_f/hcl9f8lx0j9gy0gg2nkgt5900000gn/T/apm-install-dir-11979-31304-e8ht1s.wrd9j",
   "bugs": {
     "url": "https://github.com/sunshine-cybernetics/language-formality/issues"
   },
@@ -30,14 +30,14 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "homepage": "https://github.com/sunshine-cybernetics/language-formality#readme",
+  "homepage": "https://github.com/sunshine-cybernetics/language-formality/blob/master/README.md",
   "keywords": [],
   "license": "MIT",
   "main": "./lib/language-formality",
   "name": "language-formality",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sunshine-cybernetics/language-formality.git"
+    "url": "git+https://github.com/sunshine-cybernetics/language-formality.git"
   },
-  "version": "0.2.1"
+  "version": "0.2.0"
 }

@@ -1,5 +1,14 @@
 # Change Log
 
+## [0.2.0] - 2019-11-06 - Formality v0.3.161
+## Updated
+  - Arithmetics symbols (`.+.`, `.-.`, `./.`, `.*.`, `.%.`, etc)
+  - `import` highligh now gets the name of the imported file too
+## Added
+  - Highlight for `halt`, `log` and `print`
+  - Symbols `$`, `*`, `+`, etc
+
+
 ## [0.1.5] - 2019-08-29
 ### Added
 - Add `?`, `==`, `case`, `@`, `;`

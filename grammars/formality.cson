@@ -41,7 +41,7 @@
         }
       }
       {
-        'match' : '(//.*$)'
+        'match' : '((\\s*|\\t*)//.*)'
         'name' : 'comment.line.double-slash.fm'
       }
     ]
@@ -49,23 +49,23 @@
   'keyword' : {
     'patterns' : [
       {
-        'match' : '(\\bT\\s)'
+        'match' : '(\\bT\\s|\\bprint\\b|\\blog\\b|\\bhalt\\b)'
         'name' : 'keyword.other.fm'
       }
       {
-        'match' : '(import|open)'
+        'match' : '(import\\s\\w*@?\\d?)'
         'name' : 'keyword.control.import.fm'
       }
       {
-        'match' : '(\\s\\.=\\s|\\s.<\\s|\\s.>\\s|\\s.!\\s| \\.\\| |\\s.&\\s| \\s\\.>>\\s | \\s\\.<<\\s | \\.\\^ | \\.\\ˆ | ==)'
+        'match' : '(\\s.<.\\s|\\s.>.\\s|\\s.!.\\s| \\.\\|\\. | \\.&\\.| \\.>>\\. | \\s\\.<<.\\s | .==.)'
         'name' : 'keyword.operator.logical.fm'
       }
       {
-        'match' : '(\\s-\\s| \\+ | \\* | \\% | / | \\^ | \\ˆ )'
+        'match' : '(.-. | .\\+. | \\.\\*\\. | .%. | \\d\\s?\\./\\.\\s?\\d | \\.\\^\\. | \\.\\ˆ\\. | .#. | .\\*\\*. )'
         'name' : 'keyword.operator.arithmetic.fm'
       }
       {
-        'match' : '(\\bif\\s|\\belse[\\s\\x{007c}\\:]|\\bthen[\\s\\x{007c}\\:]|@\\s|case)'
+        'match' : '(\\bif\\s|\\belse[\\s\\x{007c}\\:]|\\bthen[\\s\\x{007c}\\:]|@\\s|\\bcase\\b)'
         'name' : 'keyword.conditional.fm'
       }
     ]
@@ -101,11 +101,11 @@
   'punctuations' : {
     'patterns' : [
       {
-        'match' : '(#|~|!|\\$|\\.|\\?)'
+        'match' : '(#|~|!|\\$|\\.|\\?|\\+|%|&|\\*)'
         'name' : 'punctuation.definition.variable.fm'
       }
       {
-        'match' : '(\\s+=\\s+|:|=[\\x{003e}]|=>|->|~[\\x{003e}]|,|<|>|;)'
+        'match' : '(=|:|=[\\x{003e}]|=>|\\s->\\s|~[\\x{003e}]|,|<|>|;)'
         'name' : 'punctuation.fm'
       }
       {
